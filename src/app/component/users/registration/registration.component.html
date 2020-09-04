@@ -22,8 +22,8 @@
               </div>
               <div class="form-group">
                 <label>Lozinka</label>
-                <input type="password" minlength="3" maxlength="30" [(ngModel)]="user.password" name="password" id="password" class="form-control" placeholder="Lozinka"  
-                  validateEqual="confirmPassword" reverse="true" #password="ngModel" minlength="3">       
+                <input type="password" minlength="1" maxlength="30" [(ngModel)]="user.password" name="password" id="password" class="form-control" placeholder="Lozinka"
+                  validateEqual="confirmPassword" reverse="true" #password="ngModel">
                 <small [hidden]="password.valid || (password.pristine && !formRegister.submitted)" class="input text-danger">
                   Password is required. Minimum 12 characters, at least one uppercase letter, one lowercase letter, one number and one special character
                 </small>
